@@ -18,7 +18,7 @@
         <%= product.description %>
         <%= product.color %>
         <%= product.price %>
-        <%= image_tag(product.image_url, class: "img-fluid" , :size => "260x180") %>
+        <%= image_tag(product.image_url "logo.jpg", class: "img-fluid" , :size => "260x180") %>
         <%= link_to 'Show', product %>
         <%= link_to 'Edit', edit_product_path(product) %>
         <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
