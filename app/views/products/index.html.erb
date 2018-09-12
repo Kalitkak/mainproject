@@ -28,7 +28,7 @@
           <%= product.colour %>
           <%= product.price %>
 
-          <%= image_tag(product.image_url 'images/adventure.jpg', class: "img-fluid" , :size => "260x180") %>
+          <%= image_tag(product.image_url, class: "img-fluid" , :size => "260x180") unless product.image_url.nil? %>
 
           <%= link_to 'Show', product %>
           <%= link_to 'Edit', edit_product_path(product) %>
