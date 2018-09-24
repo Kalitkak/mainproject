@@ -5,15 +5,19 @@
     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
   </ol>
   <div class="carousel-inner">
-    <% @products.each do |product| %>
-    <div class="carousel-item">
-      <%= image_tag(product.image_url) %>
-
+    <div class="carousel-item active">
+      <img alt="Red city bike" src="" />
       <div class="carousel-caption d-none d-md-block">
-        <%= product.name %>
+        <p>Red City Bike</p>
       </div>
     </div>
-    <% end %>
+
+    <div class="carousel-item active">
+      <img alt="Red city bike" src="http://myapp.com/img/blue_cruiser.jpg" />
+      <div class="carousel-caption d-none d-md-block">
+        <p>Blue Cruiser</p>
+      </div>
+    </div>
   </div>
 
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
