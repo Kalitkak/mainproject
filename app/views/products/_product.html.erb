@@ -1,7 +1,7 @@
 <div class="col-12 col-sm-4">
      <div class="card bg-light mb-3">
        <div class="card-body">
-         <%= image_tag(product.image_url, class: "img-fluid", :width => 550, :height => 550) unless product.image_url.nil? %>
+         <%= image_tag(product.image_url, class: "img-fluid") unless product.image_url.nil? %>
          <h5 class="card-title"><%= product.title %></h5>
          <p class="bloc_left_price"><%= product.price %> $</p>
          <%= link_to 'Show', product %>
