@@ -1,5 +1,5 @@
 class ChangePriceToDecimal < ActiveRecord::Migration[5.2]
   def change
-    change_column :products, :price, :decimal USING price::numeric
+    change_column :products, :price, :decimal, USING price::numeric
   end
 end
