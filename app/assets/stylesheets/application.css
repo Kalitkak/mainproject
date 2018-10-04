@@ -13,5 +13,6 @@
  *= require_tree .
  *= require_self
  */
-.nav { margin: 0;
-}
+ .nav {
+ z-index:1;
+ }

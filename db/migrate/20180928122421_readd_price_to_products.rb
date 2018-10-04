@@ -1,5 +1,5 @@
 class ReaddPriceToProducts < ActiveRecord::Migration[5.2]
   def change
-    add_column :products, :price, :integer
+    change_column :products, :price, 'decimal USING CAST (price AS decimal)'
   end
 end
