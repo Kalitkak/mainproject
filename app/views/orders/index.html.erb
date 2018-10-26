@@ -3,7 +3,7 @@
     <div class="col-sm">
       <h1>
         Order # <%= order.id %>:
-        <%= link_to order.product.name, order %>
+        <%= link_to order.product.title, order %>
       </h1>
       <p><%= order.product.description %></p>
       <strong>$ <%= order.product.price %></strong>
