@@ -9,33 +9,36 @@
       </ul>
     </div>
   <% end %>
+<div class="row">
+  <div class="col-md-6">
+      <div class="form-group">
+        <%= form.label :title %>
+        <%= form.text_field :title, class: 'form-control'  %>
+      </div>
 
-  <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title %>
+      <div class="field">
+        <%= form.label :description %>
+        <%= form.text_area :description %>
+      </div>
+
+      <div class="field">
+        <%= form.label :image_url %>
+        <%= form.text_field :image_url %>
+      </div>
+
+      <div class="field">
+      <%= form.label :colour %><br>
+      <%= form.text_field :colour %>
+    </div>
+
+      <div class="field">
+      <%= form.label :price %><br>
+      <%= form.text_field :price %>
+      </div>
+
+      <div class="actions">
+        <%= form.submit %>
+    </div>
   </div>
-
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_area :description %>
-  </div>
-
-  <div class="field">
-    <%= form.label :image_url %>
-    <%= form.text_field :image_url %>
-  </div>
-
-  <div class="field">
-  <%= form.label :colour %><br>
-  <%= form.text_field :colour %>
 </div>
-
-  <div class="field">
-  <%= form.label :price %><br>
-  <%= form.text_field :price %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
 <% end %>
