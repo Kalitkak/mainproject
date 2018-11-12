@@ -28,3 +28,9 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+<%= render @products %>
+<%= form_with(url: products_path, method: 'get', local: true) do |form| %>
+<%= form.label :q, 'Search for:' %>
+<%= form.text_field :q, id: 'q', value: params[:q] %>
+<%= form.submit 'Search' %>
+<% end %>
