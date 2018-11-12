@@ -9,11 +9,6 @@
       </ul>
     </div>
   <% end %>
-  <%= form_with(url: products_path, method: 'get', local: true) do |form| %>
-    <%= form.label :q, 'Search for:' %>
-    <%= form.text_field :q, id: 'q', value: params[:q] %>
-    <%= form.submit 'Search' %>
-<% end %>
 <div class="row">
   <div class="col-md-6">
       <div class="form-group">
@@ -44,13 +39,6 @@
       <div class="actions">
         <%= form.submit %>
     </div>
-
-    <%= form_with(url: products_path, method: 'get', local: true) do |form| %>
-  <%= form.label :q, 'Search for:' %>
-  <%= form.text_field :q, id: 'q', value: params[:q] %>
-  <%= form.submit 'Search' %>
-<% end %>
-
   </div>
 </div>
 <% end %>
