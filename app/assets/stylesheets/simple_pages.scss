@@ -5,3 +5,8 @@ h1 {
   font: 100% Helvetica, sans-serif;
   color:blue;
 }
+
+input:required {
+    background:hsl(180, 50%, 90%);
+    border:1px solid #999;
+}

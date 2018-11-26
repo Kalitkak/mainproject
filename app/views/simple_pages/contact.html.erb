@@ -7,19 +7,19 @@
 
   <div class="form-group">
     <%= form.label :name %>
-    <%= form.text_field :name, class: "form-control", placeholder: "Enter Name" %>
+    <%= form.text_field :name, class: "form-control", placeholder: "Enter Name", :required => true %>
   </div>
 
   <div class="form-group">
     <%= form.label :email %>
-    <%= form.text_field :email, class: "form-control", placeholder: "Enter Email" %>
+    <%= form.text_field :email, class: "form-control", placeholder: "Enter Email", :required => true, type:'email'%>
   </div>
 
   <div class="form-group">
     <%= form.label :message %>
-    <%= form.text_area :message, class: "form-control", placeholder: "Enter Message", rows: 5 %>
+    <%= form.text_area :message, class: "form-control", placeholder: "Enter Message", rows: 5, :required => true, :pattern => "[A-Za-z-0-9]+\s[A-Za-z-'0-9]+" %>
   </div>
-  
+
 </div>
 <%= form.submit "Send", class: "form_label" %>
 <% end %>
