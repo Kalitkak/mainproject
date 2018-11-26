@@ -3,10 +3,41 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 h1 {
   font: 100% Helvetica, sans-serif;
-  color:blue;
+  color:Blue;
+  font-size:20px;
+  font-weight: bold;
+  text-align: center;
 }
 
 input:required {
     background:hsl(180, 50%, 90%);
     border:1px solid #999;
+}
+
+input[type=submit] {
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+input[type=text_area] {
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.row{
+    display: table;
+    clear: both;
+}
+.column {
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
 }
